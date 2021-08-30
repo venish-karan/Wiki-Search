@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+ Error
+ {% endblock %}
+
+{% block body %}
+{% if title %}
+<h1 id="error_h1">Your Requested {{title}} page was not found!!
+    please check list of titles from Home page.
+</h1>
+{% else %}
+<h1 id="error_h1">{{title_new_page}} already exists.Please create content on different topic or you can edit {{title_new_page}} entry on that page.</h1>
+{% endif %}
+{% endblock %}

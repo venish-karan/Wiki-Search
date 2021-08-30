@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %} 
+
+{% load entries_content %}
+
+{% block title %} 
+
+{{title}} 
+
+{% endblock %} 
+
+{% block body %}
+
+{{content|convert_markdown|safe}}
+
+<a href="{% url 'encyclopedia:EditArea' %}">Edit Content</a>
+
+{% endblock %}

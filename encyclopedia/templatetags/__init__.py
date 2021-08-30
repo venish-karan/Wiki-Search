@@ -1,0 +1,1 @@
+# this file is just for making sure that django knows about this folder (templatetags)
