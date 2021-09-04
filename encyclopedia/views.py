@@ -88,11 +88,4 @@ def random_page(request):
         "content": util.get_entry(title),
         "form": WikiSearch(request.POST or None)
     })
-
-# def edit_page(request):
-#     title = 'CSS'
-#     return render(request, "encyclopedia/EditPage.html", {
-#         "title": title,
-#         "prePopulatedContent": util.get_entry(title),
-#     })
     
